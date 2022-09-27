@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tienda</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav class="justify-content-center navbar navbar-expand-lg px-5 py-3" id="arriba">
+            <div class="container-fluid">
+                <a class="navbar-brand p-3" href="./index.html"><img src="https://www.sleep-token.com/wp-content/uploads/sites/15/2021/06/sleep-token-logo-light.png" alt="logo de marca"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="text-decoration-none navbar-nav ms-auto" id="navbar">
+                        <a class="carrito" href="index.html"><img src="https://cdn-icons-png.flaticon.com/512/3144/3144460.png"></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="container text-center"> 
+            <h1 class="titulo">Merch</h1>
+            <div id="contenedorProductos" class="row" ></div>
+
+        </section>
+        
+        <section class="container text-center"> 
+            <h2 class="titulo">Your Cart</h2>
+            <button id="vaciarCarrito" class="btn text-bg-light border-dark">Empty Cart</button>
+
+            <p class="total">TOTAL $ <span id="totalCompra">0</span></p>
+            <div class="row py-5" id="contenedorCarrito"></div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

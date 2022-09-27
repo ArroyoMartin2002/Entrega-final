@@ -1,0 +1,83 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-image: url(https://wallpapercave.com/wp/wp11458957.gif);
+    background-size:100% 100%;
+}
+
+.titulo{
+    text-align: center;
+    margin-top: 5px;
+    margin: 30px;
+}
+
+.card{
+    background-color: transparent;
+    color: white;
+    border-color: transparent;
+}
+
+.card div{
+    background-color: #265072c5;
+    border-radius: 10px;
+    box-shadow: 0 7px 30px -10px rgba(166, 189, 201, 0.3);
+}
+
+#contenedorProductos div div img:hover {
+    scale: 105%;
+    transition: all 1s ease;
+}
+
+.card-title{
+    font-size: medium;
+    text-shadow: 6px 5px 10px black;
+}
+
+.card-text{
+    text-shadow: 6px 5px 10px rgba(0, 0, 0, 0.164);
+    color: rgb(255, 255, 255);
+}
+
+.total{
+    color: white;
+    font-size: 3rem;
+    padding: 15px;
+}
+
+.navbar-brand{
+    transition: filter 0.7s;
+    text-align: center;
+}
+
+.navbar-brand a img{
+    width: 50px;
+}
+
+.navbar-brand:hover{
+    filter: drop-shadow(7px 7px 4px black);
+}
+
+.titulo, a{
+    color: rgb(255, 255, 255);
+    text-shadow: 6px 5px 10px black;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+
+.carrito:hover{
+    filter:drop-shadow(3px 3px 8px rgba(255, 255, 255, 0.329));
+    padding: 15px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.carrito img{
+    width: 60px;
+}
+
+.carrito:visited{
+    text-decoration: none;
+}
+
+
