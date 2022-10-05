@@ -80,4 +80,8 @@ body{
     text-decoration: none;
 }
 
+.btn-darkblue{
+    background-color:#265072;
+    color: rgb(214, 208, 208);
+}
 

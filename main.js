@@ -50,6 +50,13 @@ const agregarAlCarrito = (id) =>{
     productoEnCarrito ? productoEnCarrito.cantidad++ : carrito.push(producto); 
 
     actualizarCarrito();
+
+    Toastify( {
+        text: "Added To Cart Successfully",
+        duration: 1000,
+        position: "right",
+        close: true,
+    }).showToast();
 }
 
 const contenedorCarrito = document.getElementById("contenedorCarrito")
@@ -90,10 +97,28 @@ const eliminarDelCarrito = (id) => {
 const vaciarCarrito = document.getElementById("vaciarCarrito");
 
 vaciarCarrito.addEventListener("click", () => {
+    swal.fire({
+        title:"Do you want to empty your cart?",
+        icon: "info",
+        background: "white",
+        backdrop: "#2650724f",
+        confirmButtonText: "yes",
+        showCancelButton: true,
+        cancelButtonText: "Cancel",
+        cancelButtonColor: "b7959b"
+    }).then((result) => {
+        if (result.isConfirmed) {   
 
-    carrito.splice(0, carrito.length);
+            carrito.splice(0, carrito.length);
+            actualizarCarrito();
 
-    actualizarCarrito();
+            swal.fire({
+                title:"Cart Emptied",
+                icon: "success",
+                confirmButtonText:"Aceptar",
+            })
+        };
+    })
 });
 
 const totalCompra = document.getElementById("totalCompra");

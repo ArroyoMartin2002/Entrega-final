@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tienda</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -17,7 +18,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="text-decoration-none navbar-nav ms-auto" id="navbar">
-                        <a class="carrito" href="index.html"><img src="https://cdn-icons-png.flaticon.com/512/3144/3144460.png"></a>
+                        <a class="carrito" href="#comprarCarrito"><img src="https://cdn-icons-png.flaticon.com/512/3144/3144460.png"></a>
                     </div>
                 </div>
             </div>
@@ -32,12 +33,12 @@
         
         <section class="container text-center"> 
             <h2 class="titulo">Your Cart</h2>
-            <button id="vaciarCarrito" class="btn text-bg-light border-dark">Empty Cart</button>
+            <button id="vaciarCarrito" class="btn btn-darkblue border-dark">Empty Cart</button>
 
             <p class="total">TOTAL $ <span id="totalCompra">0</span></p>
             <div class="row py-5" id="contenedorCarrito"></div>
             
-            <button class="btn text-center text-bg-primary m-5 border-dark" id="comprarCarrito">BUY</button>
+            <button class="btn-darkblue btn text-center m-5 border-dark" id="comprarCarrito">BUY</button>
         </section>
 
             
@@ -45,6 +46,8 @@
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="./main.js"></script>
 </body>
 </html>
